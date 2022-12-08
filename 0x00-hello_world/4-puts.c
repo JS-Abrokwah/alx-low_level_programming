@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - The program starts executing from here
+ * main - The progam always starts execution from here
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char str[] = "\"Programming is like building a multilingual puzzle\n";
+	char str[] = "\"Programming is like building a multilingual puzzle";
 
-    puts(str); /*print the value of variable str to stdout*/
-    return (0); /*exit program with 0*/
+	puts(str); /*prints the value of variable str to stout*/
+	return (0); /*exit program with 0*/
 }
