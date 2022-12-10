@@ -10,11 +10,11 @@
 int main(void)
 {
 	int n;
+	int tmp; /*This is a temporal variable*/
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int tmp; /*This is a temporal variable*/
 
 	tmp = n % 10;
 	if (tmp > 5)
