@@ -8,8 +8,8 @@
  */
 int _islower(int c)
 {
-	char letter = (char) c
-	int result = islower(c);
+	char letter = (char) c;
+	int result = islower(letter);
 
 	if (result != 0)
 		return (1);
