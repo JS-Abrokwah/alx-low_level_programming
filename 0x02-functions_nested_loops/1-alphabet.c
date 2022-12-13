@@ -1,18 +1,6 @@
 #include "main.h"
 
 /**
- * main - Program starts here
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
-
-/**
  * print_alphabet - Prints all aphabets in lowercase
  *
  * Return: void
