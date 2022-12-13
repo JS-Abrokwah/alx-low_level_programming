@@ -8,7 +8,7 @@
  */
 int _islower(int c)
 {
-	/*int c is aninteger argument */
+	char letter = (char) c
 	int result = islower(c);
 
 	if (result != 0)
