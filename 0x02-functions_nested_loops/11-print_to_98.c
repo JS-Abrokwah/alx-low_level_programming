@@ -20,5 +20,4 @@ void print_to_98(int n)
 		else
 			break;
 	}
-	_putchar('\n');
 }
