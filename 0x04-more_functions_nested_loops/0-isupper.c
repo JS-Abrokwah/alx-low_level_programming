@@ -8,10 +8,15 @@
  */
 int _isupper(int c)
 {
-	int result = isupper(c); /* call builtin isupper function*/
+	int letter = c; /*assign c to a local variable*/
+	int result = isupper(letter); /* call builtin isupper function*/
 
-	if (result != 0)
-		return (1);
-	else
+	if (result == 0)
+	{
 		return (0);
+	}
+	else
+	{
+		return (1);
+	}
 }
