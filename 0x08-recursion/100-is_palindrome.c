@@ -41,7 +41,7 @@ int p1(char *s, int l)
  * Return: recursion
  */
 
-nt is_palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 
