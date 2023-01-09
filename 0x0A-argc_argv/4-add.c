@@ -12,30 +12,23 @@
 
 int main(int argc, char *argv[])
 {
-	int i, digitcheck;
-	int sum = 0;
+	int num, digit, sum = 0;
 
-	if (argc < 2)
+	for (num = 1; num < argc; num++)
 	{
-		printf("%d\n", 0);
-		return (0);
-	}
-
-	for (i = 1; i < argc; i++)
-	{
-		digitcheck = isdigit(argv[i]);
-		if (digitcheck == 0)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-	}
 
-	for (i = 1; i < argc; i++)
-	{
-		sum += atoi(argv[i]);
+		sum += atoi(argv[num]);
 	}
 
 	printf("%d\n", sum);
+
 	return (0);
 }
