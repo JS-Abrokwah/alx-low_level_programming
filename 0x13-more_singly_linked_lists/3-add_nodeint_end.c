@@ -20,9 +20,16 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	new->n = n;
 	new->next = NULL;
 
-	while (iterator->next != NULL)
-		iterator = iterator->next;
-	iterator->next = new;
+	if (iterator == NULL)
+	{
+		iterator = new;
+	}
+	else
+	{
+		while (iterator->next != NULL)
+			iterator = iterator->next;
+		iterator->next = new;
+	}
 
 	return (new);
 }
